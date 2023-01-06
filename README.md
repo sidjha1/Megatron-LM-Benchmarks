@@ -2,7 +2,7 @@
 
 This repository is a collection of benchmarks of NVIDIA's Megatron-LM. The baseline model is just model parallelism, no recomputation or sequence parallelism. We compare against the baseline model when marking overheads. All timing calculations are based on the time to perform 100 training iterations.
 
-We use one cluster of 8 V100 GPUs through AWS for all benchmarking. If sequence paralleism is enabled, the partitios are sent to the same GPUs as the tensor paralleism.
+We use one cluster of 8 V100 GPUs through AWS for all benchmarking. If sequence paralleism is enabled, the partitios are sent to the same GPUs as the tensor paralleism. The recorded peak memory is the peak memory allocated across any of the GPUs during training. For example, if GPU 1 had a peak allocation of 100 MB, and GPU 2 had a peak allocation of 200 MB, the recorded peak allocation of the system would be 200 MB.
 
 # Graphs
 
