@@ -53,7 +53,7 @@ We use one cluster of 8 V100 GPUs through AWS for all benchmarking. If sequence 
 | Strategy                                | Time (ms) | Peak Memory (MB) |
 | --------------------------------------- | --------- | ---------------- |
 | Baseline                                | 330       | 4491             |
-| Sequence Parallel                       | 390       | 4245             |
+| Sequence Parallel                       | 398       | 4245             |
 | Selective Recompute                     | 382       | 2607             |
 | Sequence Parallel + Selective Recompute | 449       | 2366             |
 | Full Recompute                          | 450       | 1840             |
